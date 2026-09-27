@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "sites": [
+    {
+      "name": "Ticket shop behind a reloading consent wall",
+      "url": "https://minds-ai-co.github.io/website-canary/ticket-shop/",
+      "why": "Renders nothing until a consent choice, every choice reloads the page, and the content is a dense seat map: the KAP failures of #6557 (wall-only capture, empty shell after the click, truncated describer).",
+      "facts": [
+        { "pattern": "nachtfalter", "flags": "i" },
+        { "pattern": "kanalsaal", "flags": "i" },
+        { "pattern": "\\b(58|41|27|9)\\s*(€|euro)", "flags": "i" },
+        { "pattern": "\\bU\\s?-?27\\b", "flags": "i" },
+        { "pattern": "saalplan|sitzplan|seat(ing)?\\s*(plan|map|chart)", "flags": "i" },
+        { "pattern": "preiskategor|price\\s*categor|kategorie\\s*[123]", "flags": "i" }
+      ]
+    },
+    {
+      "name": "Organiser event page",
+      "url": "https://minds-ai-co.github.io/website-canary/event/",
+      "why": "An ordinary page with a non-blocking cookie notice. If this fails, website capture is broken for everyone.",
+      "facts": [
+        { "pattern": "nachtfalter", "flags": "i" },
+        { "pattern": "ilse\\s+varga|varga", "flags": "i" },
+        { "pattern": "ravel|ma\\s+m[èe]re", "flags": "i" },
+        { "pattern": "familienfassung|16\\s*uhr|kinder\\s+bis\\s+12", "flags": "i" },
+        { "pattern": "19[.:]30", "flags": "i" }
+      ]
+    },
+    {
+      "name": "News front page behind two consent walls",
+      "url": "https://minds-ai-co.github.io/website-canary/news/",
+      "why": "The site's own banner, then a vendor dialog in an iframe, and a settings link that navigates away: the BBC failures of #6557.",
+      "facts": [
+        { "pattern": "aldery", "flags": "i" },
+        { "pattern": "mara\\s+quint|quint", "flags": "i" },
+        { "pattern": "kestrel", "flags": "i" },
+        { "pattern": "night\\s*market|nachtmarkt|tram\\s*depot|straßenbahn", "flags": "i" },
+        { "pattern": "violin|geige|gletscher|glacier", "flags": "i" }
+      ]
+    },
+    {
+      "name": "BBC home page (live)",
+      "url": "https://www.bbc.com/",
+      "why": "A real site with a real consent vendor and bot defences our test pages cannot imitate. Content changes daily, so only the screenshot checks apply."
+    }
+  ]
+}

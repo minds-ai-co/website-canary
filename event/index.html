@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Konzerte – Ensemble Lumen</title>
+<!--
+  Canary pattern: an ordinary organiser page with a small cookie notice that
+  does not block the content. It must keep working while the harder patterns
+  get fixed; if this one fails, capture is broken for everyone.
+-->
+<style>
+  :root { --ink: #22201c; --muted: #6f6a60; --accent: #0f6b5c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.6 Georgia, "Times New Roman", serif; color: var(--ink); background: #fbf8f2; }
+  nav { display: flex; gap: 28px; padding: 18px 40px; font: 14px system-ui, sans-serif; text-transform: uppercase; letter-spacing: .08em; border-bottom: 1px solid #e6dfd2; }
+  nav b { margin-right: auto; color: var(--accent); }
+  .hero { background: linear-gradient(135deg, #0f6b5c, #1b3a4b); color: #fff; padding: 64px 40px; }
+  .hero small { font: 14px system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
+  .hero h1 { font-size: 52px; margin: 8px 0; font-weight: normal; }
+  .hero p { font-size: 20px; margin: 0; opacity: .92; }
+  main { max-width: 880px; margin: 0 auto; padding: 40px; }
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; font: 15px system-ui, sans-serif; margin-bottom: 32px; }
+  .facts div { background: #fff; border: 1px solid #e6dfd2; border-radius: 6px; padding: 14px; }
+  .facts b { display: block; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+  a.button { display: inline-block; background: var(--accent); color: #fff; padding: 12px 22px; border-radius: 4px; text-decoration: none; font: 15px system-ui, sans-serif; }
+  .notice { position: fixed; left: 16px; bottom: 16px; max-width: 360px; background: #fff; border: 1px solid #e6dfd2; border-radius: 8px; padding: 12px 14px; font: 13px system-ui, sans-serif; box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+  .notice button { margin-top: 8px; border: 0; background: var(--accent); color: #fff; border-radius: 4px; padding: 6px 12px; }
+</style>
+</head>
+<body>
+<nav><b>Ensemble Lumen</b><span>Konzerte</span><span>Ensemble</span><span>Education</span><span>Kontakt</span></nav>
+<section class="hero">
+  <small>Saison · Orchesterkonzert</small>
+  <h1>Nachtfalter-Suite</h1>
+  <p>Uraufführung der Komponistin Ilse Varga, dazu Ravels „Ma mère l’Oye“</p>
+</section>
+<main>
+  <div class="facts">
+    <div><b>Termin</b>Samstag, 14. März, 19:30 Uhr</div>
+    <div><b>Ort</b>Großer Kanalsaal, Konzerthaus am Kanal</div>
+    <div><b>Leitung</b>Tomasz Wierny</div>
+  </div>
+  <p>Zwölf kurze Sätze, jeder nach einem Nachtfalter benannt: Ilse Varga hat für das Ensemble Lumen ein Stück geschrieben, das mit Holzbläsern im Dunkeln beginnt und mit dem ganzen Orchester im Morgengrauen endet. Davor erklingt Ravels Märchensuite, danach lädt das Ensemble zum Publikumsgespräch im Foyer.</p>
+  <p>Familien aufgepasst: Um 16 Uhr gibt es eine einstündige Familienfassung mit Erzählerin, Kinder bis 12 Jahre frei.</p>
+  <p><a class="button" href="../ticket-shop/">Tickets ab 9 €</a></p>
+</main>
+<div class="notice" id="cookie-notice">Diese Seite verwendet nur technisch notwendige Cookies. <br><button onclick="this.parentNode.remove()">Verstanden</button></div>
+</body>
+</html>
